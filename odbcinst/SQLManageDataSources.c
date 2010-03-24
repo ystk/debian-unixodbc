@@ -75,9 +75,9 @@ char *_getUIPluginName( char *pszName, char *pszUI )
 char *_appendUIPluginExtension( char *pszNameAndExtension, char *pszName )
 {
     if ( strlen( SHLIBEXT ) > 0 )
-        sprintf( pszNameAndExtension, "%s%s", pszName, SHLIBEXT );
+        sprintf( pszNameAndExtension, "%s%s.1", pszName, SHLIBEXT );
     else
-        sprintf( pszNameAndExtension, "%s.so", pszName );
+        sprintf( pszNameAndExtension, "%s.so.1", pszName );
 
     return pszName;
 }
